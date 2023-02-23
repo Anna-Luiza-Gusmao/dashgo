@@ -1,4 +1,5 @@
 import { Input } from '@/components/Form/Input'
+import { Logo } from '@/components/Header/Logo'
 import { Flex, Button, Stack } from '@chakra-ui/react'
 
 export default function SignIn() {
@@ -9,6 +10,7 @@ export default function SignIn() {
       alignItems="center"
       justifyContent="center"
     >
+      <Logo />
       <Flex 
         as="form" 
         w="100%" 
