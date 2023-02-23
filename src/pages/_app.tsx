@@ -7,7 +7,7 @@ export default function App({ Component, pageProps }: AppProps) {
   return (
     <ChakraProvider theme={theme}>
       <Head>
-        <title>Dashgo.</title>
+        <title>dashgo.</title>
       </Head>
       <Component {...pageProps} />
     </ChakraProvider>
