@@ -7,7 +7,7 @@ import {
     RiInputMethodLine,
     RiLogoutCircleLine
 } from "react-icons/ri"
-import { NavLink } from "./Navlink"
+import { NavLink } from "./NavLink"
 import { NavSection } from "./NavSection"
 
 export function SidebarNav() {
