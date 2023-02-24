@@ -1,8 +1,13 @@
 import { Input } from '@/components/Form/Input'
 import { Logo } from '@/components/Header/Logo'
-import { Flex, Button, Stack } from '@chakra-ui/react'
+import { Flex, Button, Stack, useBreakpointValue } from '@chakra-ui/react'
 
 export default function SignIn() {
+  const isWideVersion = useBreakpointValue({
+    base: false,
+    lg: true
+  })
+  
   return (
     <Flex 
       w="100vw" 
@@ -10,7 +15,7 @@ export default function SignIn() {
       alignItems="center"
       justifyContent="center"
     >
-      <Logo />
+      { isWideVersion && <Logo /> }
       <Flex 
         as="form" 
         w="100%" 
