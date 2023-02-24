@@ -34,3 +34,4 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 - React Icons
 - Chakra UI
+- Apex Charts
