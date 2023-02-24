@@ -1,5 +1,4 @@
 import { Stack } from "@chakra-ui/react"
-import { useRouter } from "next/router"
 import {
     RiContactsLine,
     RiDashboardLine,
@@ -11,8 +10,6 @@ import { NavLink } from "./NavLink"
 import { NavSection } from "./NavSection"
 
 export function SidebarNav() {
-    const router = useRouter()
-
     return (
         <Stack spacing="12" align="flex-start">
             <NavSection title="Geral">
@@ -34,7 +31,7 @@ export function SidebarNav() {
             </NavSection>
 
             <NavSection title="Logout">
-                <NavLink icon={RiLogoutCircleLine} onClick={() => router.push('/')}>
+                <NavLink icon={RiLogoutCircleLine} href="/">
                     Sair
                 </NavLink>
             </NavSection>
